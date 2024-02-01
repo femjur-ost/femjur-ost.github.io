@@ -34,19 +34,20 @@ main {
   max-width: 80vw;
   margin: 20px auto;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
-  border: 0.2vw outset #ffffff;
+  border: 0.2vw outset rgba(255, 255, 255, 0.3);
 }
 
 section {
   margin-bottom: 20px;
 }
 
-h2 {
+h2, a{
   color: #9400D3;
 }
 
-a {
-  color: #9400D3;
+/*IPHONE*/
+@media only screen and (max-device-width: 500px) {
+
 }
