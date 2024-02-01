@@ -1,0 +1,120 @@
+* {
+  min-width: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  background: #9400D3;
+  overflow-x: hidden;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 200px;
+  padding: 100px 20vw;
+  margin: 0;
+}
+
+.title {
+  color: #000000;
+  letter-spacing: -0.06em;
+}
+
+h1 {
+  font-size: 5em;
+  margin: 0;
+}
+
+a{
+  color: #9400D3;
+}
+
+main {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 200px;
+  padding: 100px 20vw;
+}
+
+.hell {
+  background: #b777d2;
+}
+
+.dunkel {
+  background: #310344;
+  background: linear-gradient(90deg, #310344, rgba(49, 3, 68, 0.5), #310344);
+}
+
+.wave-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-top svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 120px;
+}
+
+.wave-top .shape-fill {
+  fill: #9400D3;
+}
+
+.wave-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 5rem;
+}
+
+.wave-bottom .shape-fill {
+  fill: #9400D3;
+}
+
+/*IPHONE*/
+@media only screen and (max-device-width: 500px) {
+  header {
+    min-height: 13em;
+  }
+
+  .section {
+    min-height: 2em;
+  }
+
+  .title {
+    letter-spacing: -0.1em;
+  }
+
+  h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+}
