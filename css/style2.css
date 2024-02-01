@@ -30,6 +30,16 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  font-size: 3em;
+  letter-spacing: -0.06em;
+  margin-bottom: 0.3em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
 a{
   color: #9400D3;
 }
