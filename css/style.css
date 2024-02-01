@@ -1,0 +1,52 @@
+* {
+  min-width: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgb(148, 0, 211));
+  background-size: cover;
+  position: relative;
+}
+
+header {
+  background: linear-gradient(to bottom, #9400D3 0%, rgba(148, 0, 211, 0) 100%);
+  color: #000000;
+  padding: 1em 5em;
+}
+
+.title {
+  color: #000000;
+  letter-spacing: -0.06em;
+}
+
+h1 {
+  font-size: 5em;
+  margin: 0;
+}
+
+main {
+  width: fit-content;
+  max-width: 80vw;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  border: 0.2vw outset #ffffff;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #9400D3;
+}
+
+a {
+  color: #9400D3;
+}
