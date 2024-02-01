@@ -1,8 +1,16 @@
-.switch {
+.switchBox {
   position: absolute;
   display: inline-block;
   right: 20px;
   top: 20px;
+  width: 60px;
+  height: 34px;
+  z-index: 1000;
+}
+
+.switch {
+  position: fixed;
+  display: inline-block;
   width: 60px;
   height: 34px;
   z-index: 1000;
@@ -43,7 +51,7 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #9400D3;
+  box-shadow: 0 0 1px #310344;
 }
 
 input:checked + .slider:before {

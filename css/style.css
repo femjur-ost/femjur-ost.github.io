@@ -6,17 +6,16 @@ body {
   margin: 0;
   padding: 0;
   width: 100vw;
-  height: 100vh;
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(rgba(255, 255, 255, 0.8), rgb(148, 0, 211));
-  background-size: cover;
+  background-size: 100vw 100vh;
   position: relative;
 }
 
 header {
   background: linear-gradient(to bottom, #9400D3 0%, rgba(148, 0, 211, 0) 100%);
   color: #000000;
-  padding: 1em 5em;
+  padding: 5vh 1em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +36,7 @@ h1 {
 main {
    width: 50%;
    max-width: 80vw;
-   margin: 2em auto;
+   margin: 20vh auto;
    padding: 2em;
    background-color: rgba(255, 255, 255, 0.8);
    border-radius: 8px;
@@ -79,12 +78,10 @@ h2, a{
 
   main {
     width: fit-content;
-    max-width: 80vw;
-    margin: 2em auto;
     padding: 2em;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
-    border: 0.2vw outset rgba(255, 255, 255, 0.3);
+    border: 0.5vw outset rgba(255, 255, 255, 0.3);
   }
 
   section {
