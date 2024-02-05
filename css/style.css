@@ -7,9 +7,8 @@ body {
   padding: 0;
   width: 100vw;
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(rgba(255, 255, 255, 0.8), rgb(148, 0, 211));
-  background-size: 100vw 100vh;
-  position: relative;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgb(148, 0, 211)) no-repeat fixed;
+  background-size: cover;
 }
 
 header {
