@@ -82,14 +82,14 @@
     const currentTheme = localStorage.getItem('theme');
     if (currentTheme) {
       stylesheet.href = `${currentTheme}.css`;
-      themeSwitch.checked = currentTheme === 'css/style2';
+      themeSwitch.checked = currentTheme === 'css/style_2';
     }
 
     // Event listener for theme switch
     themeSwitch.addEventListener('change', function () {
       if (themeSwitch.checked) {
-        stylesheet.href = 'css/style2.css';
-        localStorage.setItem('theme', 'css/style2');
+        stylesheet.href = 'css/style_2.css';
+        localStorage.setItem('theme', 'css/style_2');
       } else {
         stylesheet.href = 'css/style.css';
         localStorage.setItem('theme', 'css/style');
