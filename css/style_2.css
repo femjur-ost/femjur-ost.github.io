@@ -143,8 +143,7 @@ section {
     /* CSS specific to iOS devices */
     .dunkel {
       background: rgb(49,3,68);
-      background: linear-gradient(0deg, rgba(49,3,68,1) 40%, rgba(49,3,68,0) 90%);
-      background-attachment: fixed;
+      background: linear-gradient(0deg, rgba(49,3,68,1) 40%, rgba(49,3,68,0) 90%) fixed;
     }
   }
 }
