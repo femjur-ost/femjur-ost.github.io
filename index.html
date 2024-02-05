@@ -79,8 +79,9 @@
     const stylesheet = document.getElementById('stylesheet');
 
     // Check the saved theme preference in local storage
-    const currentTheme = localStorage.getItem('theme');
+    let currentTheme = localStorage.getItem('theme');
     if (currentTheme) {
+      if(currentTheme === 'css/style2') currentTheme = 'css/style_2'
       stylesheet.href = `${currentTheme}.css`;
       themeSwitch.checked = currentTheme === 'css/style_2';
     }
