@@ -71,32 +71,32 @@
             </svg>
         </div>
     </section>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const themeSwitch = document.getElementById('themeSwitch');
-        const stylesheet = document.getElementById('stylesheet');
-
-        // Check the saved theme preference in local storage
-        const currentTheme = localStorage.getItem('theme');
-        if (currentTheme) {
-          stylesheet.href = `${currentTheme}.css`;
-          themeSwitch.checked = currentTheme === 'css/style2';
-        }
-
-        // Event listener for theme switch
-        themeSwitch.addEventListener('change', function () {
-          if (themeSwitch.checked) {
-            stylesheet.href = 'css/style2.css';
-            localStorage.setItem('theme', 'css/style2');
-          } else {
-            stylesheet.href = 'css/style.css';
-            localStorage.setItem('theme', 'css/style');
-          }
-        });
-      });
-
-    </script>
 </main>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const themeSwitch = document.getElementById('themeSwitch');
+    const stylesheet = document.getElementById('stylesheet');
+
+    // Check the saved theme preference in local storage
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme) {
+      stylesheet.href = `${currentTheme}.css`;
+      themeSwitch.checked = currentTheme === 'css/style2';
+    }
+
+    // Event listener for theme switch
+    themeSwitch.addEventListener('change', function () {
+      if (themeSwitch.checked) {
+        stylesheet.href = 'css/style2.css';
+        localStorage.setItem('theme', 'css/style2');
+      } else {
+        stylesheet.href = 'css/style.css';
+        localStorage.setItem('theme', 'css/style');
+      }
+    });
+  });
+
+</script>
 </body>
 </html>
