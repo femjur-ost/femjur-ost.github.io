@@ -64,8 +64,11 @@ section {
 }
 
 .dunkel {
-  background: #310344;
-  background: linear-gradient(90deg, #310344, rgba(49, 3, 68, 0.5), #310344);
+  background: rgb(49,3,68);
+  background: -moz-linear-gradient(90deg, rgba(49,3,68,1) 0%, rgba(49,3,68,0.4962359943977591) 50%, rgba(49,3,68,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(49,3,68,1) 0%, rgba(49,3,68,0.4962359943977591) 50%, rgba(49,3,68,1) 100%);
+  background: linear-gradient(90deg, rgba(49,3,68,1) 0%, rgba(49,3,68,0.4962359943977591) 50%, rgba(49,3,68,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#310344",endColorstr="#310344",GradientType=1);
 }
 
 .wave-top {
@@ -127,4 +130,12 @@ section {
     font-size: 3em;
     margin: 0;
   }
+
+  .dunkel {
+    background: rgb(49,3,68);
+    background: -moz-linear-gradient(0deg, rgba(49,3,68,1) 0%, rgba(49,3,68,0) 70%);
+    background: -webkit-linear-gradient(0deg, rgba(49,3,68,1) 0%, rgba(49,3,68,0) 70%);
+    background: linear-gradient(0deg, rgba(49,3,68,1) 0%, rgba(49,3,68,0) 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#310344",endColorstr="#310344",GradientType=1);
+   }
 }
