@@ -4,7 +4,8 @@
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: system-ui, sans-serif;
+  font-weight: normal;
   color: #000000;
   background: #9400D3;
   overflow-x: hidden;
@@ -123,7 +124,7 @@ section {
   }
 
   .title {
-    letter-spacing: -0.1em;
+    letter-spacing: -0.08em;
   }
 
   h1 {

@@ -6,7 +6,8 @@ body {
   margin: 0;
   padding: 0;
   width: 100vw;
-  font-family: 'Roboto', sans-serif;
+  font-family: system-ui, sans-serif;
+  font-weight: normal;
   background: linear-gradient(rgba(255, 255, 255, 0.8), rgb(148, 0, 211)) no-repeat fixed;
   background-size: cover;
 }
