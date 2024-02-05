@@ -137,6 +137,7 @@ section {
     background: -webkit-linear-gradient(0deg, rgba(49,3,68,1) 0%, rgba(49,3,68,0) 70%);
     background: linear-gradient(0deg, rgba(49,3,68,1) 0%, rgba(49,3,68,0) 70%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#310344",endColorstr="#310344",GradientType=1);
+    background-attachment: fixed;
    }
 
   @supports (-webkit-touch-callout: none) {
@@ -147,7 +148,6 @@ section {
       background: -webkit-linear-gradient(0deg, rgba(49,3,68,1) 40%, rgba(49,3,68,0) 90%);
       background: linear-gradient(0deg, rgba(49,3,68,1) 40%, rgba(49,3,68,0) 90%);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#310344",endColorstr="#310344",GradientType=1);
-      background-attachment: fixed;
     }
   }
 }
