@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  background: linear-gradient(to bottom, #9400D3 0%, rgba(148, 0, 211, 0) 100%);
+  background: linear-gradient(to bottom, #9400D3 0%, rgba(148, 0, 211, 0) 50%, rgba(148, 0, 211, 0) 100%);
   color: #000000;
   padding: 5vh 1em;
   display: flex;
@@ -23,7 +23,7 @@ header {
 
 .title {
   color: #000000;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.04em;
   width: 50%;
   max-width: 80vw;
 }
@@ -36,7 +36,7 @@ h1 {
 main {
    width: 50%;
    max-width: 80vw;
-   margin: 20vh auto;
+   margin:auto;
    padding: 2em;
    background-color: rgba(255, 255, 255, 0.8);
    border-radius: 8px;
@@ -51,11 +51,7 @@ h2, a{
   color: #9400D3;
 }
 
-.wave-top {
-  display: none;
-}
-
-.wave-bottom {
+.wave{
   display: none;
 }
 

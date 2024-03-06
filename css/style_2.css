@@ -66,50 +66,42 @@ section {
 
 .dunkel {
   background: rgb(49,3,68);
-  background: -moz-linear-gradient(90deg, rgba(49,3,68,1) 0%, rgba(49,3,68,0.4962359943977591) 50%, rgba(49,3,68,1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(49,3,68,1) 0%, rgba(49,3,68,0.4962359943977591) 50%, rgba(49,3,68,1) 100%);
-  background: linear-gradient(90deg, rgba(49,3,68,1) 0%, rgba(49,3,68,0.4962359943977591) 50%, rgba(49,3,68,1) 100%);
+  background: linear-gradient(90deg, rgba(49,3,68,1) 0%, rgba(49,3,68,0.4) 30%, rgba(49,3,68,0.4) 70%, rgba(49,3,68,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#310344",endColorstr="#310344",GradientType=1);
 }
 
-.wave-top {
+.wave {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
 }
 
-.wave-top svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 120px;
+.top {
+  top: -1px;
+  left: 0;
 }
 
-.wave-top .shape-fill {
-  fill: #9400D3;
-}
-
-.wave-bottom {
-  position: absolute;
+.bottom {
   bottom: 0;
   left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
   transform: rotate(180deg);
 }
 
-.wave-bottom svg {
+.sticky {
+  position: fixed;
+  display: inline-block;
+  top: 0;
+}
+
+.wave svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 5rem;
+  height: 3rem;
 }
 
-.wave-bottom .shape-fill {
+.wave .shape-fill {
   fill: #9400D3;
 }
 
