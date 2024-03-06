@@ -87,7 +87,7 @@ section {
   transform: rotate(180deg);
 }
 
-.sticky {
+.fixed {
   position: fixed;
   display: inline-block;
   top: 0;
@@ -110,9 +110,9 @@ section {
     min-height: 13em;
   }
 
-  .section {
+  section {
     min-height: 2em;
-    padding: 100px 10vw;
+    padding: 5vh 10vw;
   }
 
   .title {
@@ -126,6 +126,6 @@ section {
 
   .dunkel {
     background: rgba(49, 3, 68, 0.5);
-    background: linear-gradient(0deg, rgba(49,3,68,1) 0%, rgba(49,3,68,0) 90%);
+    background: linear-gradient(0deg, rgba(49,3,68,1) 0%, rgba(49,3,68,0) 100%);
   }
 }
