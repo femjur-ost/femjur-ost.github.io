@@ -23,7 +23,7 @@ header {
 
 .title {
   color: #000000;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.04em;
 }
 
 h1 {
@@ -67,7 +67,6 @@ section {
 .dunkel {
   background: rgb(49,3,68);
   background: linear-gradient(90deg, rgba(49,3,68,1) 0%, rgba(49,3,68,0.4) 30%, rgba(49,3,68,0.4) 70%, rgba(49,3,68,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#310344",endColorstr="#310344",GradientType=1);
 }
 
 .wave {
@@ -113,10 +112,11 @@ section {
 
   .section {
     min-height: 2em;
+    padding: 100px 10vw;
   }
 
   .title {
-    letter-spacing: -0.08em;
+    letter-spacing: -0.06em;
   }
 
   h1 {
@@ -125,10 +125,7 @@ section {
   }
 
   .dunkel {
-    background: rgb(49,3,68);
-    background: -moz-linear-gradient(0deg, rgba(49,3,68,1) 0%, rgba(49,3,68,0) 70%);
-    background: -webkit-linear-gradient(0deg, rgba(49,3,68,1) 0%, rgba(49,3,68,0) 70%);
-    background: linear-gradient(0deg, rgba(49,3,68,1) 0%, rgba(49,3,68,0) 70%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#310344",endColorstr="#310344",GradientType=1);
+    background: rgba(49, 3, 68, 0.5);
+    background: linear-gradient(0deg, rgba(49,3,68,1) 0%, rgba(49,3,68,0) 90%);
   }
 }
