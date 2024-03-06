@@ -126,6 +126,6 @@ section {
 
   .dunkel {
     background: rgba(49, 3, 68, 0.5);
-    background: linear-gradient(0deg, rgba(49,3,68,1) 0%, rgba(49,3,68,0) 100%);
+    background: linear-gradient(0deg, rgba(49,3,68,1) 0%, rgba(49,3,68,0) 70%);
   }
 }
