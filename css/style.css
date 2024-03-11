@@ -7,14 +7,13 @@ body {
   padding: 0;
   width: 100vw;
   font-family: system-ui, sans-serif;
-  font-weight: normal;
+  font-weight: 450;
   background: linear-gradient(rgba(255, 255, 255, 0.8), rgb(148, 0, 211)) no-repeat fixed;
   background-size: cover;
 }
 
 header {
   background: linear-gradient(to bottom, #9400D3 0%, rgba(148, 0, 211, 0) 50%, rgba(148, 0, 211, 0) 100%);
-  color: #000000;
   padding: 5vh 1em;
   display: flex;
   justify-content: center;
@@ -22,10 +21,9 @@ header {
 }
 
 .title {
-  color: #000000;
+  color: #3d004f;
   letter-spacing: -0.04em;
-  width: 50%;
-  max-width: 80vw;
+  text-align: center;
 }
 
 h1 {
@@ -34,13 +32,14 @@ h1 {
 }
 
 main {
-   width: 50%;
-   max-width: 80vw;
-   margin:auto;
-   padding: 2em;
-   background-color: rgba(255, 255, 255, 0.8);
-   border-radius: 8px;
-   border: 0.2vw outset rgba(255, 255, 255, 0.3);
+  width: 50%;
+  max-width: 80vw;
+  min-width: 500px;
+  margin:auto;
+  padding: 2em;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  border: 0.2vw outset rgba(255, 255, 255, 0.3);
  }
 
 section {
@@ -53,6 +52,14 @@ h2, a{
 
 .wave{
   display: none;
+}
+
+footer{
+  color: #212121;
+  font-size: x-small;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
 }
 
 /*IPHONE*/
