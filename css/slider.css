@@ -1,5 +1,5 @@
 .switchBox {
-  position: absolute;
+  position: fixed;
   display: inline-block;
   right: 20px;
   top: 20px;
@@ -67,4 +67,12 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/*IPHONE*/
+@media only screen and (max-device-width: 500px) {
+  .switchBox {
+    top: auto;
+    bottom: 20px;
+  }
 }
