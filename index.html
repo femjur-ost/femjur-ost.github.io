@@ -19,15 +19,14 @@
 </head>
 <body>
 <header class="dunkel">
-    <h1 class="title">Feministische <br>Juristinnen <br>Ostschweiz</h1>
-    <div class="switchBox">
-        <label class="switch">
-            <input type="checkbox" id="themeSwitch">
-            <span class="slider round"></span>
-        </label>
-    </div>
-
+    <h1 id="title">Feministische <br>Juristinnen <br>Ostschweiz</h1>
 </header>
+<div class="switchBox">
+    <label class="switch">
+        <input type="checkbox" id="themeSwitch">
+        <span class="slider round"></span>
+    </label>
+</div>
 <main>
     <section id="about">
         <h2>Über uns</h2>
@@ -93,6 +92,18 @@
       }
     });
   });
+
+  // When the user scrolls down, resize the header's font size
+
+/*  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.getElementById("title").style.fontSize = "2em";
+    } else {
+      document.getElementById("title").style.fontSize = "5em";
+    }
+  }*/
 
 </script>
 </body>
