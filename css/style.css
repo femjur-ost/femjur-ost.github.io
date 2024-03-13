@@ -20,6 +20,10 @@ header {
   align-items: center;
 }
 
+#icon {
+  display: none;
+}
+
 #title {
   color: #3d004f;
   letter-spacing: -0.04em;
