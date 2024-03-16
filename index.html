@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon" href="img/AppIcon.svg">
 </head>
 <body>
-<header class="dunkel">
+<header>
     <div id="header-box">
         <h1 id="title">Feministische Juristinnen Ostschweiz</h1>
         <!--<div id="icon">FJO</div>-->
@@ -42,7 +42,7 @@
             Du bist Juristin, in Ausbildung oder ausgebildet, und unterstützt unsere Ziele? Dann freuen wir uns, dich kennenzulernen!<br><br>
         </p>
     </section>
-    <section id="contact" class="hell">
+    <section id="contact">
         <h2>Kontakt</h2>
         <p><a href="mailto:info@femjur-ost.ch">info@femjur-ost.ch</a><br><br>
             Feministische Juristinnen Ostschweiz<br>
@@ -91,18 +91,20 @@
 
   // When the user scrolls down, resize the header's font size
 
-  //window.onscroll = function() {scrollFunction()};
+  window.onscroll = function() {scrollFunction()};
 
   function scrollFunction() {
     if (window.mobileCheck()) {
 
     } else {
+      const title = document.getElementById("title")
+      const header = document.getElementById("header-box")
       if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        //document.getElementById("title").style.fontSize = "2em";
-        document.getElementById("title").style.width = "18em";
+        title.style.width = "18em";
+        header.style.height = "7em";
       } else {
-        document.getElementById("title").style.width = "6em";
-        //document.getElementById("title").style.fontSize = "5em";
+        header.style.height = "20em";
+        title.style.width = "6em";
       }
     }
 
