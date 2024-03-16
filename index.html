@@ -20,8 +20,14 @@
 <body>
 <header class="dunkel">
     <div id="header-box">
-        <h1 id="title">Feministische <br>Juristinnen <br>Ostschweiz</h1>
-        <div id="icon">FJO</div>
+        <h1 id="title">Feministische Juristinnen Ostschweiz</h1>
+        <!--<div id="icon">FJO</div>-->
+        <svg id="icon" viewBox="0 0 123 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.173279 74V1.2727H46.7642V12.3167H13.348V32.0611H43.5682V43.1051H13.348V74H0.173279Z" fill="black"/>
+            <path d="M55.6243 1.2727H68.6925V52.4091C68.6688 57.0966 67.6745 61.133 65.7095 64.5184C63.7445 67.8802 60.9983 70.4725 57.4709 72.2954C53.9671 74.0947 49.8833 74.9943 45.2194 74.9943C40.9581 74.9943 37.1229 74.2367 33.7138 72.7216C30.3283 71.1827 27.6413 68.91 25.6527 65.9034C23.664 62.8968 22.6697 59.1562 22.6697 54.6818H35.7734C35.7971 56.6468 36.2232 58.3395 37.0518 59.7599C37.9041 61.1804 39.076 62.2694 40.5675 63.027C42.0589 63.7845 43.7753 64.1633 45.7166 64.1633C47.8236 64.1633 49.611 63.7254 51.0788 62.8494C52.5466 61.9498 53.6593 60.624 54.4169 58.8721C55.1981 57.1202 55.6006 54.9659 55.6243 52.4091V1.2727Z" fill="black"/>
+            <path d="M122.972 37.6363C122.972 45.4725 121.504 52.1842 118.568 57.7713C115.656 63.3347 111.679 67.5961 106.636 70.5554C101.617 73.5147 95.9238 74.9943 89.5554 74.9943C83.187 74.9943 77.4815 73.5147 72.4389 70.5554C67.42 67.5724 63.4427 63.2992 60.5071 57.7358C57.5952 52.1486 56.1392 45.4488 56.1392 37.6363C56.1392 29.8002 57.5952 23.1004 60.5071 17.5369C63.4427 11.9498 67.42 7.67658 72.4389 4.7173C77.4815 1.75802 83.187 0.278381 89.5554 0.278381C95.9238 0.278381 101.617 1.75802 106.636 4.7173C111.679 7.67658 115.656 11.9498 118.568 17.5369C121.504 23.1004 122.972 29.8002 122.972 37.6363ZM109.726 37.6363C109.726 32.1202 108.862 27.4682 107.134 23.6804C105.429 19.8688 103.062 16.9924 100.031 15.0511C97.0009 13.0861 93.509 12.1037 89.5554 12.1037C85.6018 12.1037 82.1098 13.0861 79.0795 15.0511C76.0492 16.9924 73.67 19.8688 71.9417 23.6804C70.2372 27.4682 69.3849 32.1202 69.3849 37.6363C69.3849 43.1524 70.2372 47.8163 71.9417 51.6278C73.67 55.4157 76.0492 58.2921 79.0795 60.2571C82.1098 62.1984 85.6018 63.169 89.5554 63.169C93.509 63.169 97.0009 62.1984 100.031 60.2571C103.062 58.2921 105.429 55.4157 107.134 51.6278C108.862 47.8163 109.726 43.1524 109.726 37.6363Z" fill="black"/>
+            <path d="M84.054 117.703V68.5554H95.2045V117.703H84.054ZM65.0554 98.7045V87.5539H114.203V98.7045H65.0554Z" fill="black"/>
+        </svg>
     </div>
 </header>
 <main>
@@ -85,15 +91,28 @@
 
   // When the user scrolls down, resize the header's font size
 
-/*  window.onscroll = function() {scrollFunction()};
+  window.onscroll = function() {scrollFunction()};
 
   function scrollFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      document.getElementById("title").style.fontSize = "2em";
+    if (window.mobileCheck()) {
+
     } else {
-      document.getElementById("title").style.fontSize = "5em";
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        //document.getElementById("title").style.fontSize = "2em";
+        document.getElementById("title").style.width = "18em";
+      } else {
+        document.getElementById("title").style.width = "6em";
+        //document.getElementById("title").style.fontSize = "5em";
+      }
     }
-  }*/
+
+  }
+
+  window.mobileCheck = function() {
+    let check = false;
+    (function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))) check = true;})(navigator.userAgent||navigator.vendor||window.opera);
+    return check;
+  };
 
 </script>
 </body>

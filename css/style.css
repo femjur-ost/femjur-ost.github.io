@@ -13,6 +13,10 @@ body {
 }
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
   background: linear-gradient(to bottom, #9400D3 0%, rgba(148, 0, 211, 0) 50%, rgba(148, 0, 211, 0) 100%);
   padding:1em;
   display: flex;
@@ -25,13 +29,15 @@ header {
 }
 
 #title {
+  //font-size: min(max(8vh, 2em), 5em);
+
   color: #3d004f;
   letter-spacing: -0.04em;
   text-align: center;
   font-size: 5em;
-  width: 50vw;
-  max-width: 80vw;
-  min-width: 500px;
+  width: 6em;
+  //max-width: 10em;
+  //min-width: 500px;
   margin: auto ;
 }
 
@@ -90,7 +96,6 @@ footer{
 
   section {
     margin-bottom: 20px;
-    border-radius: 100%;
   }
 
   footer{
