@@ -35,14 +35,22 @@ header {
 }
 
 #icon {
+  background: #9400D3;
+  background: radial-gradient(circle, rgba(148, 0, 211, 0) 20%, #9400D3 100%);
+  //color: white;
+  width: min(1.5em, 13vw);
+  height: min(1.5em, 13vw);
+  border-radius: 100%;
+  border: 0.06em solid ;
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  font-size: 5em;
-  font-weight: bold;
+  align-items: center;
+  font-size: min(5em, 10vw);
+  font-weight: 420;
   letter-spacing: -0.05em;
-  height: 100%;
+  margin-right: min(1em, 5vw);
+  margin-top: min(1em, 10vh);
 }
 
 main {
@@ -72,7 +80,7 @@ footer{
   align-items: center;
 }
 
-/*IPHONE*/
+/*PHONE*/
 @media only screen and (max-device-width: 500px) {
   header {
     background: linear-gradient(to bottom, #9400D3 0%, rgba(148, 0, 211, 0) 50%);
@@ -97,8 +105,20 @@ footer{
   }
 
   #icon {
-    height: 5em;
-    width: 5em;
+    background: #9400D3;
+    background: radial-gradient(circle, rgba(148, 0, 211, 0) 20%, #9400D3 100%);
+  //color: white;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-weight: 420;
+    letter-spacing: -0.05em;
+    margin: 0.1em;
   }
 
   main {

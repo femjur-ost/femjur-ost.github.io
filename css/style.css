@@ -32,6 +32,15 @@ header {
   display: none;
 }
 
+#icon-main {
+  display: none;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  color: #3d004f;
+  font-size: 2em;
+}
+
 #title {
   color: #3d004f;
   letter-spacing: -0.04em;
@@ -48,6 +57,7 @@ header {
 }
 
 main {
+  position: relative;
   width: 50vw;
   max-width: 80vw;
   min-width: 500px;
@@ -87,9 +97,10 @@ footer{
   }
 
   #title {
-    letter-spacing: -0.06em;
+    letter-spacing: -0.04em;
     font-size: 3em;
-    width: 90vw;
+    font-weight: 600;
+    width: 6em;
     min-width: 0;
     max-width: 100vw;
   }
@@ -108,7 +119,7 @@ footer{
     margin-bottom: 0;
   }
 
-  h2, a, p{
+  a, p{
     margin: auto;
   }
 
