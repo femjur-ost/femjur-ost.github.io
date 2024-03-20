@@ -7,8 +7,8 @@ body {
   padding: 0;
   width: 100vw;
   font-family: system-ui, sans-serif;
-  background: linear-gradient(rgba(255, 255, 255, 0.8), rgb(148, 0, 211)) no-repeat fixed;
-  background-size: cover;
+  background: url("../img/FJO-Background.svg") repeat fixed, linear-gradient(rgba(255, 255, 255, 0.8), rgb(148, 0, 211)) repeat fixed;
+  background-size: 50%;
 }
 
 header {
@@ -87,6 +87,10 @@ footer{
 
 /*IPHONE*/
 @media only screen and (max-device-width: 500px) {
+  body {
+    background-size: 100%;
+  }
+
   header {
     background: linear-gradient(to bottom, #9400D3 0%, rgba(148, 0, 211, 0) 50%);
     height: fit-content;
