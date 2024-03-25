@@ -96,7 +96,7 @@
     let currentTheme = localStorage.getItem('theme');
     const userAgent = navigator.userAgent.toLowerCase();
     if (currentTheme && currentTheme === STYLE1 && userAgent .indexOf('safari')!=-1 && !(userAgent .indexOf('chrome')  > -1)&& !((userAgent .indexOf('opera')  > -1)||(userAgent .indexOf('opr')  > -1))){
-      document.body.style.background = "url(\"../img/FJO-Background-NoEffects.svg\") repeat fixed, linear-gradient(rgba(255, 255, 255, 0.8), rgb(148, 0, 211)) repeat fixed";
+      document.body.style.background = "url(\"../img/fjo-Background-NoEffects.svg\") repeat fixed, linear-gradient(rgba(255, 255, 255, 0.8), rgb(148, 0, 211)) repeat fixed";
       document.body.style.backgroundSize = "50%";
     } else {
       document.body.style.removeProperty('background');
