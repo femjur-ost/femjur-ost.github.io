@@ -12,8 +12,7 @@
     <meta property="og:url" content="https://www.femjur-ost.ch/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link id="stylesheet" rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>fjo - Feministische Juristinnen Ostschweiz</title>
     <link rel="icon" href="img/AppIcon.svg">
     <link rel="apple-touch-icon" href="img/AppIcon.svg">
@@ -22,7 +21,6 @@
 <header>
     <div id="header-box">
         <h1 id="title">Feministische Juristinnen Ostschweiz</h1>
-        <div id="icon">fjo</div>
     </div>
 </header>
 <main>
@@ -50,60 +48,16 @@
 
 <footer>
     <a href="Datenschutz.txt" target="_blank">Datenschutz</a>
-    <a href="Datenschutz" target="_blank">Datenschutz</a>
 </footer>
 
 <script>
-  const STYLE1 = 'css/style'
-  const STYLE2 = 'css/style' //'css/style_2'
-  document.addEventListener('DOMContentLoaded', function () {
-    const themeSwitch = document.getElementById('themeSwitch');
-    const stylesheet = document.getElementById('stylesheet');
-
-    // Check the saved theme preference in local storage
-    let currentTheme = localStorage.getItem('theme');
-    if (currentTheme) {
-      if(currentTheme === 'css/style2') {
-        currentTheme = STYLE2
-      }
-      stylesheet.href = `${currentTheme}.css`;
-      themeSwitch.checked = currentTheme === STYLE2;
-    }
-    updateBackground();
-
-    // Event listener for theme switch
-    themeSwitch.addEventListener('change', function () {
-      if (themeSwitch.checked) {
-        stylesheet.href = `${STYLE2}.css`;
-        localStorage.setItem('theme', STYLE2);
-      } else {
-        stylesheet.href = `${STYLE1}.css`;
-        localStorage.setItem('theme', STYLE1);
-      }
-      updateBackground();
-    });
-  });
-
-  // check if safari browser and change background svg to
-
-  const updateBackground = () => {
-    let currentTheme = localStorage.getItem('theme');
-    const userAgent = navigator.userAgent.toLowerCase();
-    if (currentTheme && currentTheme === STYLE1 && userAgent .indexOf('safari')!=-1 && !(userAgent .indexOf('chrome')  > -1)&& !((userAgent .indexOf('opera')  > -1)||(userAgent .indexOf('opr')  > -1))){
-      document.body.style.background = "url(\"../img/fjo-Background-NoEffects.svg\") repeat fixed, linear-gradient(rgba(255, 255, 255, 0.8), rgb(148, 0, 211)) repeat fixed";
-      document.body.style.backgroundSize = "50%";
-    } else {
-      document.body.style.removeProperty('background');
-    }
-  }
 
   // When the user scrolls down, resize the header's font size
 
   window.onscroll = function() {scrollFunction()};
 
   function scrollFunction() {
-    let currentTheme = localStorage.getItem('theme');
-    if (!window.mobileCheck() && currentTheme && currentTheme === STYLE1) {
+    if (!window.mobileCheck()) {
       const title = document.getElementById("title")
       const header = document.getElementById("header-box")
       if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
