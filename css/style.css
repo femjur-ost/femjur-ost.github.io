@@ -81,11 +81,14 @@ h2, a{
 }
 
 footer{
-  color: #212121;
-  font-size: small;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer a{
+  font-size:  medium;
+  color: #212121;
 }
 
 /*IPHONE*/
